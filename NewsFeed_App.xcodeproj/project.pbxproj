@@ -13,6 +13,9 @@
 		D32589241EBCD5DF001CA945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32589231EBCD5DF001CA945 /* Assets.xcassets */; };
 		D32589271EBCD5DF001CA945 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32589251EBCD5DF001CA945 /* LaunchScreen.storyboard */; };
 		D325892F1EBCE50E001CA945 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D325892E1EBCE50E001CA945 /* TableViewController.swift */; };
+		D35DFF941EBCEB28007E102E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DFF931EBCEB28007E102E /* NetworkManager.swift */; };
+		D35DFF991EBCF0E1007E102E /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DFF981EBCF0E1007E102E /* Dogs.swift */; };
+		D35DFF9B1EBCF26B007E102E /* VideoDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35DFF9A1EBCF26B007E102E /* VideoDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D32589261EBCD5DF001CA945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D32589281EBCD5DF001CA945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D325892E1EBCE50E001CA945 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D35DFF931EBCEB28007E102E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D35DFF981EBCF0E1007E102E /* Dogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		D35DFF9A1EBCF26B007E102E /* VideoDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +63,41 @@
 			isa = PBXGroup;
 			children = (
 				D325891C1EBCD5DF001CA945 /* AppDelegate.swift */,
-				D325891E1EBCD5DF001CA945 /* ViewController.swift */,
-				D325892E1EBCE50E001CA945 /* TableViewController.swift */,
+				D35DFF961EBCF0B5007E102E /* Network */,
+				D35DFF971EBCF0C4007E102E /* Models */,
+				D35DFF951EBCF0A7007E102E /* Controllers */,
 				D32589201EBCD5DF001CA945 /* Main.storyboard */,
 				D32589231EBCD5DF001CA945 /* Assets.xcassets */,
 				D32589251EBCD5DF001CA945 /* LaunchScreen.storyboard */,
 				D32589281EBCD5DF001CA945 /* Info.plist */,
 			);
 			path = NewsFeed_App;
+			sourceTree = "<group>";
+		};
+		D35DFF951EBCF0A7007E102E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D325892E1EBCE50E001CA945 /* TableViewController.swift */,
+				D325891E1EBCD5DF001CA945 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D35DFF961EBCF0B5007E102E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D35DFF931EBCEB28007E102E /* NetworkManager.swift */,
+				D35DFF9A1EBCF26B007E102E /* VideoDataStore.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		D35DFF971EBCF0C4007E102E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D35DFF981EBCF0E1007E102E /* Dogs.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35DFF941EBCEB28007E102E /* NetworkManager.swift in Sources */,
+				D35DFF9B1EBCF26B007E102E /* VideoDataStore.swift in Sources */,
 				D325891F1EBCD5DF001CA945 /* ViewController.swift in Sources */,
 				D325892F1EBCE50E001CA945 /* TableViewController.swift in Sources */,
+				D35DFF991EBCF0E1007E102E /* Dogs.swift in Sources */,
 				D325891D1EBCD5DF001CA945 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +342,7 @@
 				D325892D1EBCD5DF001CA945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

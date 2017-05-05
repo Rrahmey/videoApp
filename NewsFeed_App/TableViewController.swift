@@ -8,11 +8,13 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let store = VideoDataStore.sharedInstance
+        store.getDogVideosFromAPI()
+        
         // Do any additional setup after loading the view.
     }
 

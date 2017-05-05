@@ -28,19 +28,26 @@
                                 <state key="normal" title="DOGS" backgroundImage="Boo Image">
                                     <color key="titleColor" red="0.98319822550000002" green="0.98879045249999997" blue="0.96228808160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="qen-u3-v7X" kind="presentation" id="F5W-J5-jk3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94555801153182983" green="0.98592156171798706" blue="0.96323305368423462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iV5-O8-U1E"/>
+                    <connections>
+                        <outlet property="dogButton" destination="khu-ei-WGR" id="R68-3g-Bfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEF-of-qC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.59999999999999" y="144.3778110944528"/>
+            <point key="canvasLocation" x="1104.8" y="144.3778110944528"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="hUl-WJ-EC9">
             <objects>
-                <tableViewController id="qen-u3-v7X" sceneMemberID="viewController">
+                <tableViewController id="qen-u3-v7X" customClass="TableViewController" customModule="NewsFeed_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XZJ-ef-h9i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +70,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raz-Ld-0Pe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="910" y="138"/>
+            <point key="canvasLocation" x="1848.8" y="137.18140929535232"/>
         </scene>
     </scenes>
     <resources>
